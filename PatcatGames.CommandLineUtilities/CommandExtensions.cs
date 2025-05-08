@@ -145,7 +145,7 @@ public static class CommandExtensions
         Type genericType,
         Type typeArgument,
         Type[] argTypes,
-        params object[] constructorArgs)
+        params object?[] constructorArgs)
     {
         if (!genericType.IsGenericType)
             throw new ArgumentException($"Type {genericType.Name} is not a generic type");

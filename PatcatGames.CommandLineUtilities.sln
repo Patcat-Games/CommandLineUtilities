@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatcatGames.CommandLineUtilities", "PatcatGames.CommandLineUtilities\PatcatGames.CommandLineUtilities.csproj", "{0199C307-2BB2-468A-8FAA-A7DAD3EDB2A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatcatGames.CommandLineUtitities.Example", "PatcatGames.CommandLineUtitities.Example\PatcatGames.CommandLineUtitities.Example.csproj", "{6CEBC395-DDAA-4B36-90FD-5B35AA88F9FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{0199C307-2BB2-468A-8FAA-A7DAD3EDB2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0199C307-2BB2-468A-8FAA-A7DAD3EDB2A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0199C307-2BB2-468A-8FAA-A7DAD3EDB2A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEBC395-DDAA-4B36-90FD-5B35AA88F9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEBC395-DDAA-4B36-90FD-5B35AA88F9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEBC395-DDAA-4B36-90FD-5B35AA88F9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEBC395-DDAA-4B36-90FD-5B35AA88F9FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

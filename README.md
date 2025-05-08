@@ -43,7 +43,8 @@ rootCommand.AddCommand(myCommand);
 
 ```csharp
 using System.CommandLine;
-using Patcat.CommandLineUtils;
+using PatcatGames.CommandLineUtilities;
+using PatcatGames.CommandLineUtilities.Attributes;
 
 class Program
 {
@@ -81,34 +82,34 @@ Description:
   This is the root level command description.
 
 Usage:
-  PatcatDB.CLI [command] [options]
+  PatcatGames.CommandLineUtitities.Example [command] [options]
 
 Options:
   --version       Show version information
   -?, -h, --help  Show help and usage information
 
 Commands:
-  my-command <FirstArgument> <SecondArgument>  This is the description of my-command [default: default!]
+  my-command <First Argument> <Second Argument>  This is the description of my-command [default: default!]
 ```
 
 **Command-specific help:**
 
 ```
 Description:
-  Publishes a PatcatDB module to a database.
+  This is the description of my-command
 
 Usage:
-  PatcatDB.CLI publish <FirstArgument> [<SecondArgument>] [options]
+  PatcatGames.CommandLineUtitities.Example my-command <First Argument> [<Second Argument>] [options]
 
 Arguments:
-  <FirstArgument>  The first argument.
-  <SecondArgument>  The second argument, but this one is optional. [default: default!]
+  <First Argument>   The first argument.
+  <Second Argument>  The second argument, but this one is optional. [default: default!]
 
 Options:
-  --optionOne, -o1 <Option 1 Pretty Name>  [default: 1]
-  --optionTwo, -o2, -2 <Option 2>  [default: 2]
-  -y, --skip-confirmations         Skips confirmations. [default: False]
-  -?, -h, --help                   Show help and usage information
+  -o1, --option-one <Option One>      [default: 1]
+  -2, -o2, --option-two <Option Two>  [default: 2]
+  -y, --skip-confirmations            Skips confirmations. [default: False]
+  -?, -h, --help                      Show help and usage information
 ```
 
 ## Setting Up as a .NET Tool
@@ -125,6 +126,7 @@ Example project file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
+
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
@@ -137,9 +139,9 @@ Example project file:
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="System.CommandLine" Version="2.*" />
-        <ProjectReference Include="PatcatGames.CommandLineUtilities" Version="1.*" />
+        <PackageReference Include="PatcatGames.CommandLineUtilities" Version="1.0.2" />
     </ItemGroup>
+
 </Project>
 ```
 
