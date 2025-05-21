@@ -68,7 +68,7 @@ internal sealed class AutoCommandHandler : ICommandHandler
             {
                 // Get value from parsed command line
                 var value = context.ParseResult.GetValueForArgument(commandArgument);
-                var i = _bindings[commandArgument.Name];
+                if (!_bindings.TryGetValue(commandArgument.Name, out var i)) continue;
                 var parameter = parameters[i];
 
                 // Handle default values if not provided
@@ -87,7 +87,7 @@ internal sealed class AutoCommandHandler : ICommandHandler
             {
                 // Get value from parsed command line
                 var value = context.ParseResult.GetValueForOption(commandOption);
-                var i = _bindings[commandOption.Name];
+                if (!_bindings.TryGetValue(commandOption.Name, out var i)) continue;
                 var parameter = parameters[i];
 
                 // Handle default values if not provided

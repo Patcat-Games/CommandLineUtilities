@@ -139,7 +139,7 @@ Example project file:
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="PatcatGames.CommandLineUtilities" Version="1.0.2" />
+        <PackageReference Include="PatcatGames.CommandLineUtilities" Version="1.0.3" />
     </ItemGroup>
 
 </Project>
